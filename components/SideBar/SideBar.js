@@ -27,8 +27,11 @@ const SideBar = () => {
               <h3>Hello, User</h3>
             </div>
 
-            <div>
+            <div className="relative">
               <BsFillBellFill className="w-5 h-5 text-white" />
+
+              <div className="absolute bg-red-600 w-[5px] h-[5px] rounded-full 
+              top-1 right-0"/>
             </div>
           </div>
 
