@@ -1,0 +1,32 @@
+export const posts = [
+    {
+        id : 1,
+        description : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, sequi!",
+        name : "Lorem Ipsume",
+        image : "/user1.png",
+        sector : "Sector 1",
+        likes : "2k",
+        comments : "2k",
+        views : "2k",
+    },
+    {
+        id : 2,
+        description : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, sequi!",
+        name : "Lorem Ipsume",
+        image : "",
+        sector : "Sector 2",
+        likes : "2k",
+        comments : "2k",
+        views : "2k",
+    },
+    {
+        id : 3,
+        description : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, sequi!",
+        name : "Lorem Ipsume",
+        image : "",
+        sector : "Sector 3",
+        likes : "2k",
+        comments : "2k",
+        views : "2k",
+    },
+]

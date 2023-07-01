@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@layer components{
+    .btn{
+        @apply border border-gray-500 px-4 py-2 rounded text-base font-normal h-fit w-fit
+        whitespace-nowrap
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .img{
+        @apply relative w-14 md:w-20 lg:w-28 h-8 md:h-10 lg:h-12 
+    }
+    .expandRow {
+        @apply  grid-cols-1 
+    }
+    .marketCards {
+        @apply grid-cols-1 lg:grid-cols-2 
+    }
+    .btns {
+        @apply text-white  px-1 md:px-3 rounded-full py-1 whitespace-nowrap text-sm md:text-base
+    }
+    .userLogo{
+        @apply min-w-[35px] h-[35px] md:w-[45px] md:h-[45px]  relative overflow-hidden rounded-full bg-stone-600
+    }
+    .activeTab{
+        @apply border-b-2 border-red-600 bg-[#062440]
+    }
+    .marketTab {
+        @apply hidden md:inline-block mx-1 lg:mx-3 xl:mx-5 relative w-full
+    }
+    .circle {
+        @apply rounded-full border-2 border-red-500 min-w-[45px] min-h-[45px] 
+    }
+    .custom-scroll::-webkit-scrollbar {
+        width: 10px;
+    } 
+    .custom-scroll::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+        background: #fff; 
+        border-radius: 10px;
+        /* border: 1px solid gray; */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+      }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.layout {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
